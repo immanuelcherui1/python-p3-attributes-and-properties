@@ -1,0 +1,34 @@
+        Attributes and Properties
+
+Class Attributes vs Instance Attributes:
+
+    An interesting note about class attributes is that they can be accessed on the class itself, in addition to any instances:
+
+
+Setting and Getting Attributes:
+    Python does not make the distinction between public, private, and protected. This makes it very easy for us to manipulate the members of a class or object with dot notation:
+
+    Because it is so simple to modify the attributes of classes and objects in Python, it is very rare that we write extra code to get or set attributes.
+
+    Python also provides us a few built-in functions to manipulate attributes:
+
+            i)getattr() retrieves the value of an attribute. 
+                >>>> getattr(object, name[, default]):
+            ii)setattr() changes the value of an attribute, just as you would with dot  notation.  >>>> setattr(object, name, value):
+            iii)hasattr() checks for the presence of an attribute. 
+                >>> hasattr(object, name):
+            iv)delattr() removes an attribute from a class or object. 
+                >>> delattr(object, name):
+
+    
+Properties:
+    Properties in Python are attributes that are controlled by methods.
+    
+    The function of these methods is to make sure that the value of our property makes sense
+
+    We can configure properties using our knowledge of object-oriented programming and Python's built-in property() function.
+
+    When we need to make sure an attribute meets a certain set of criteria, we need to configure it as a property.
+
+    When you need to validate input.
+        By default, Python allows us to change any attribute to any value. If we need an attribute to be within a certain range of values and we cannot guarantee this will happen, we should configure a property.
